@@ -1,0 +1,158 @@
+:root{
+    --heading: #363636;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+nav{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+nav ul{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    background: rgba(0, 0, 0, 0.5);
+    list-style: none;
+    width: 100%;
+}
+nav ul li{
+    padding: 25px 10px;
+    background-color: transparent;
+    z-index: 1;
+}
+nav ul .home-marker{
+    position: absolute;
+	height: 49px;
+	left: 0;
+	width: 0;
+	top: 10px;
+	transition: 0.6s;
+	border-radius: 20px;
+    background: green;
+}
+nav ul li a {
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+nav img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+nav div.get_started{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav div h2{
+    color: white;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+nav div.get_started a{
+    border: none;
+    border-radius: 5px;
+    background: #01be34;
+    color: white;
+    cursor: pointer;
+    padding: 15px 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: 0.5s;
+}
+nav div a:hover{
+    background: #12df48;
+}
+div.whyAndaman {
+    padding: 60px;
+    background: rgb(17, 104, 85);
+    color: white;
+}
+div.whyAndaman h1{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+div.whyAndaman p{
+    font-size: 2rem;
+}
+.svgs{
+	width: 1.125em;
+	overflow: visible;
+	display: inline-block;
+	vertical-align: -.125em; height: 1em;
+    color: grey;
+}
+div.our_providing{
+    padding: 50px;
+}
+div.our_providing h1{
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--heading);
+}
+div.our_providing > p{
+    margin: 12px;
+    font-size: 1.5rem;
+    color: #707070;
+    text-align: center;
+}
+div.our_providing div.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+div.our_providing div.cards div.card {
+    margin: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    max-width: 300px;
+    box-shadow: 10px 10px 1px #b1b1b1;
+    color: #4d4d4d;
+    font-size: 1.5rem;
+}
+div.our_providing div.cards div.card div.circle{
+    border-radius: 50%;
+    padding: 25px;
+    max-width: 180px;
+    height: 180px;
+    margin: 0 auto 25px auto;
+}
+div.our_providing div.cards div.card:nth-child(1) div.circle{
+    background: url('../images/car.jpg');
+    background-position: center;
+    background-size: cover;
+}
+div.our_providing div.cards div.card:nth-child(2) div.circle{
+    background: url('../images/hotel.jpg');
+    background-position: center;
+    background-size: cover;
+}
+div.our_providing div.cards div.card:nth-child(3) div.circle{
+    background: url('../images/beach.jpg');
+    background-position: center;
+    background-size: cover;
+}
+footer{
+    background: #0d3064;
+    height: 500px;
+}
