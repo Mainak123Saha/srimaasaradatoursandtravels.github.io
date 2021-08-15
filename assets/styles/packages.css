@@ -39,3 +39,9 @@ div.packages div.packageHead span.dataRange{
     justify-content: center;
     align-items: center;
 }
+div.packages div.packageHead #range:hover{
+    cursor: grab;
+}
+div.packages div.packageHead #range:active{
+    cursor: grabbing;
+}
