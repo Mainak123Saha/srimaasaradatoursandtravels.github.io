@@ -1,6 +1,41 @@
 body{
-    background: grey;
+    background: #f2f2f2;
+    color: #3c3c3c;
 }
-div.packages{
-    border: 2px solid black;
+div.packages {
+    display: flex;
+    flex-direction: column;
+}
+div.packages div.packageHead{
+    display: flex;
+    flex-direction: row;
+    background: white;
+    padding: 10px;
+    align-items: center;
+    box-shadow: 0px 10px 3px -2px #ccc
+}
+div.packages div.packageHead h1{
+    font-size: 2rem;
+}
+div.packages div.packageHead span.search{
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+}
+div.packages div.packageHead span.search label{
+    margin: 3px;
+    font-size: 0.9rem;
+}
+div.packages div.packageHead span.search input{
+    margin: 3px;
+    border: 1px solid #868686;
+    border-radius: 3px;
+    padding: 3px;
+    font-size: 0.9rem;
+}
+div.packages div.packageHead span.dataRange{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
