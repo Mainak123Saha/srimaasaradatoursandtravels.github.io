@@ -12,16 +12,17 @@ body{
     min-height: 100vh;
 }
 nav{
+    position: absolute;
+    top: 0;
+    left: 0;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
 }
 nav ul{
     display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
     flex-direction: row;
     background: rgba(0, 0, 0, 0.5);
     list-style: none;
@@ -48,27 +49,33 @@ nav ul li a {
     text-decoration: none;
     border-radius: 20px;
 }
-nav img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: -1;
-}
-nav div.get_started{
-    position: relative;
+div.get_started{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-nav div h2{
+div.get_started img{
+    width: 100%;
+    z-index: -1;
+}
+div.get_started div.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+div.get_started h2{
+    margin-bottom: 40px;
     color: white;
-    margin-top: -50px;
-    margin-bottom: 50px;
     font-size: 2.5rem;
 }
-nav div.get_started a{
+div.get_started a{
     border: none;
     border-radius: 5px;
     background: #01be34;
@@ -79,7 +86,7 @@ nav div.get_started a{
     text-decoration: none;
     transition: 0.5s;
 }
-nav div a:hover{
+div.get_started a:hover{
     background: #12df48;
 }
 div.whyAndaman {

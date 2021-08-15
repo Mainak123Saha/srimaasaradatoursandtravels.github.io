@@ -32,8 +32,3 @@ item.forEach(elem => {
         indicator(item[active_tab]);
     });
 });
-document.addEventListener('DOMContentLoaded', ()=>{
-    let nav = document.querySelector('nav');
-    let navImg = document.querySelector('nav img');
-    nav.style.height = navImg.height+'px';
-})
