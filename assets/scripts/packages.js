@@ -25,8 +25,8 @@ item.forEach(elem => {
 
 
 
-const date_range = document.querySelector('.packages .packageHead .dateRange input');
-const date_range_text = document.querySelector('.packages .packageHead .dateRange span');
+const date_range = document.querySelector('.packages-div .packageHead .dateRange input');
+const date_range_text = document.querySelector('.packages-div .packageHead .dateRange span');
 date_range.addEventListener('input', ()=>{
     switch (date_range.value) {
         case "0":
@@ -55,3 +55,11 @@ date_range.addEventListener('input', ()=>{
             break;
     }
 })
+
+
+function openInNewTab(url) {
+    window.open(url, '_blank').focus();
+}
+function changPageTo(url) {
+    window.location = url;
+}

@@ -23,7 +23,7 @@
             <li><a href="./contact_us.html">Contact Us</a></li>
         </ul>
     </nav>
-    <div class="packages">
+    <div class="packages-div">
         <div class="packageHead">
             <h1>Packages</h1>
             <span class="search">
@@ -35,11 +35,16 @@
                 <input type="range" name="range" id="range" min="0" max="7" step="1" value="0">
             </span>
         </div>
+        <div class="packages">
+            <div class="package" onclick="window.location='package_detail.html?package_no=1'">
+                <img src="./assets/images/Baratang.jpg" alt="Image will come here">
+                <h1>Package Name</h1>
+            </div>
+        </div>
     </div>
     <script>
         let active_tab = 1
     </script>
-    <!-- <script src="./assets/scripts/script.js"></script> -->
     <script src="./assets/scripts/packages.js"></script>
 </body>
 </html>
