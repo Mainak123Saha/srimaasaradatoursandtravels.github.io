@@ -17,7 +17,7 @@ nav{
 nav ul{
     display: flex;
     flex-direction: row;
-    background: #164a9b;
+    background: #035daa;
     list-style: none;
     width: 100%;
 }
@@ -41,4 +41,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     border-radius: 20px;
+}
+nav ul li a:hover {
+    
 }
